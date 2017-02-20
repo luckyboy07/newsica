@@ -1,0 +1,33 @@
+page-sample-page {
+    .list {
+        height: 100%;
+    }
+    .item {
+        height: 130px;
+        border: 0px;
+        border-bottom: 0px !important;
+        /*opacity: .5;*/
+        .input-wrapper {
+            height: 135px;
+            border: 0px;
+        }
+        img {
+            opacity: 0.2;
+        }
+    }
+    .label {
+        text-align: left;
+        font-family: "Arial", Georgia, Serif;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    .item-block {
+        border-bottom: 0px !important;
+    }
+    .item-md {
+        border-bottom: 0px !important;
+    }
+    .item-inner {
+        border-bottom: 0px !important;
+    }
+}

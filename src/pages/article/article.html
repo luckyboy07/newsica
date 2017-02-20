@@ -1,0 +1,29 @@
+<!--
+  Generated template for the Article page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="{{colors}}">
+        <ion-title>Article</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only>
+                <ion-icon name="search"></ion-icon>
+            </button>
+            <button ion-button icon-only>
+                <ion-icon name='more'></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content class="card-background-page">
+    <ion-refresher (ionRefresh)="refresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+    <ion-card *ngFor="let item of sources" detail-none (click)="getSpecificDetail(item)">
+        <img src="{{item.urlToImage}}" />
+        <div class="card-title">{{item.title}}</div>
+        <div class="card-subtitle">{{item.publishedAt}}</div>
+    </ion-card>
+</ion-content>
